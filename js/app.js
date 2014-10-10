@@ -1,3 +1,5 @@
+// AngularJS App
+
 var myApp = angular.module('myApp', ['ngRoute']);
 
 var Etudiants = myApp.factory('Etudiants', function($http, $q, $timeout) {
