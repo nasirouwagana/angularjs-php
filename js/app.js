@@ -9,7 +9,7 @@ var Etudiants = myApp.factory('Etudiants', function($http, $q, $timeout) {
                 factory.etudiants = data;
                 $timeout(function() {
                     deferred.resolve(factory.etudiants);                    
-                }, 2000);
+                }, 3000);
             }).error(function(data) {
                 deferred.reject('Impossible de recuperer la liste des etudiants');
             });
