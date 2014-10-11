@@ -4,7 +4,7 @@
         <li class="active">Etudiant</li>
     </ol>
     
-    <div ng-show="loading">Loading...</div>
+    <div ng-show="loading" class="text-info">Loading...</div>
 
     <div ng-hide="loading">
         <h3>Informations detaillees de : {{name + ' ' + prenom}}   </h3> 

@@ -10,7 +10,7 @@
 
 <br />
 
-<div ng-show="loading">Loading...</div>
+<div ng-show="loading" class="text-info">Loading...</div>
 
 <div class="table-responsive" ng-controller="EtudiantsCtrl" ng-hide="loading" >
     <table class="table table-bordered table-striped">
