@@ -1,4 +1,4 @@
-AngularJS - PHP
+AngularJS - PHP/MySQL
 ===================
 
 

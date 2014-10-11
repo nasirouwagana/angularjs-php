@@ -1,6 +1,6 @@
 <form role="form" class="form-inline">
     <div class="form-group">
-        <input type="text" class="form-control" placeholder="Filtrer" ng-model="query">
+        <input type="text" class="form-control" placeholder="Filtrer par nom" ng-model="query">
         <select class="form-control" ng-model="order">
             <option value="matriculeetudiant">Organiser par matricule</option>
             <option value="nometudiant">Organiser par nom</option>
@@ -22,11 +22,11 @@
             <tr>
                 <th>ID</th>
                 <th>Matricule</th>
-                <th>Noms & Prenoms</th>
+                <th>Noms</th>
             </tr>
         </thead>
         <tbody>            
-            <tr ng-repeat="etudiant in etudiants| filter: {nometudiant: query} | orderBy: order">
+            <tr ng-repeat="etudiant in etudiants | filter: {nometudiant: query} | orderBy: order">
                 <td>{{etudiant.idetudiant}}</td>
                 <td>{{etudiant.matriculeetudiant}}</td>
                 <td><a href="#/etudiant/{{etudiant.idetudiant}}">{{etudiant.nometudiant}}</a></td>
