@@ -10,7 +10,9 @@
 
 <br />
 
-<div class="table-responsive" ng-controller="EtudiantsCtrl">
+<div ng-show="loading">Loading...</div>
+
+<div class="table-responsive" ng-controller="EtudiantsCtrl" ng-show="!loading" >
     <table class="table table-bordered table-striped">
         <colgroup>
             <col class="col-xs-1">
@@ -23,9 +25,8 @@
                 <th>Noms & Prenoms</th>
             </tr>
         </thead>
-        <tbody>
-            <tr ng-show="loading">Loading...</tr>
-            <tr ng-show="!loading" ng-repeat="etudiant in etudiants| filter: {nometudiant: query} | orderBy: order">
+        <tbody>            
+            <tr ng-repeat="etudiant in etudiants| filter: {nometudiant: query} | orderBy: order">
                 <td>{{etudiant.idetudiant}}</td>
                 <td>{{etudiant.matriculeetudiant}}</td>
                 <td><a href="#/etudiant/{{etudiant.idetudiant}}">{{etudiant.nometudiant + ' ' + etudiant.prenometudiant}}</a></td>
