@@ -12,7 +12,7 @@
 
 <div ng-show="loading">Loading...</div>
 
-<div class="table-responsive" ng-controller="EtudiantsCtrl" ng-show="!loading" >
+<div class="table-responsive" ng-controller="EtudiantsCtrl" ng-hide="loading" >
     <table class="table table-bordered table-striped">
         <colgroup>
             <col class="col-xs-1">
@@ -29,7 +29,7 @@
             <tr ng-repeat="etudiant in etudiants| filter: {nometudiant: query} | orderBy: order">
                 <td>{{etudiant.idetudiant}}</td>
                 <td>{{etudiant.matriculeetudiant}}</td>
-                <td><a href="#/etudiant/{{etudiant.idetudiant}}">{{etudiant.nometudiant + ' ' + etudiant.prenometudiant}}</a></td>
+                <td><a href="#/etudiant/{{etudiant.idetudiant}}">{{etudiant.nometudiant}}</a></td>
             </tr>                                
         </tbody>
     </table>
