@@ -10,7 +10,7 @@ var Etudiants = myApp.factory('Etudiants', function ($http, $q, $timeout) {
                     factory.etudiants = data;
                     $timeout(function () {
                         deferred.resolve(factory.etudiants);
-                    }, 3000);
+                    }, 1000);
                 }).error(function (data) {
                     deferred.reject('Impossible de recuperer la liste des etudiants');
                 });
@@ -26,7 +26,7 @@ var Etudiants = myApp.factory('Etudiants', function ($http, $q, $timeout) {
                         etudiant = etudiants[key];
                         $timeout(function () {
                             deferred.resolve(etudiant);
-                        }, 3000);
+                        }, 1000);
                     }
                 });
 

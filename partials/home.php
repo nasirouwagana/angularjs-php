@@ -26,7 +26,7 @@
             </tr>
         </thead>
         <tbody>            
-            <tr ng-repeat="etudiant in etudiants | filter: {nometudiant: query} | orderBy: order">
+            <tr class="repeat-animation" ng-repeat="etudiant in etudiants | filter: {nometudiant: query} | orderBy: order">
                 <td>{{etudiant.idetudiant}}</td>
                 <td>{{etudiant.matriculeetudiant}}</td>
                 <td><a href="#/etudiant/{{etudiant.idetudiant}}">{{etudiant.nometudiant}}</a></td>
