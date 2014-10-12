@@ -10,7 +10,7 @@
 
         <div class="container" style="margin-top: 50px;">
             <div class="panel panel-info">
-                <div class="panel-heading">AngularJS - PHP/MySQL</div>
+                <div class="panel-heading">AngularJS - PHP/MySQL <time class="pull-right"></time></div>
                 <div class="panel-body">                  
 
                     <div ng-view></div>
