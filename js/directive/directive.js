@@ -1,5 +1,5 @@
 myApp.directive('ngLoading', function() {
     return {
-        templateUrl: 'partials/loadin.php'
+        templateUrl: 'partials/loading.php'
     };
 });
