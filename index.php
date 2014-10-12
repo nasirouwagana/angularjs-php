@@ -11,7 +11,7 @@
         <div class="container" style="margin-top: 50px;">
             <div class="panel panel-info">
                 <div class="panel-heading">AngularJS - PHP/MySQL</div>
-                <div class="panel-body">                    
+                <div class="panel-body">                  
 
                     <div ng-view></div>
 
@@ -29,5 +29,6 @@
         <script type="text/javascript" src="js/controller/etudiants.js"></script>
         <script type="text/javascript" src="js/controller/etudiant.js"></script>
         <script type="text/javascript" src="js/route/route.js"></script>
+        <script type="text/javascript" src="js/directive/directive.js"></script>
     </body>
 </html>

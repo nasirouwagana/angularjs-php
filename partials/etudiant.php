@@ -3,8 +3,8 @@
         <li><a href="#/">Home</a></li>
         <li class="active">Etudiant</li>
     </ol>
-    
-    <div ng-show="loading" class="text-info">Loading...</div>
+
+    <div ng-show="loading" ng-loading></div>
 
     <div ng-hide="loading">
         <h3>Informations detaillees de : {{name + ' ' + prenom}}   </h3> 
