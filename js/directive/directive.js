@@ -1,7 +1,7 @@
 myApp.directive('ngLoading', function() {
     return {
         restrict: 'A',
-        templateUrl: 'partials/loading.php'
+        templateUrl: 'partials/_loading.php'
     };
 });
 
